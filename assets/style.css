@@ -179,8 +179,14 @@ a[href^="tel"] {
 .bg-white-2 {
     background-color: rgba(255, 255, 255, 0.7);
 }
-.text-primary-custom p {
+.text-primary-custom, .text-primary-custom p, .text-primary-custom:hover, .text-primary-custom:visited {
     color: #2a4562;
+}
+.text-primary-custom:link {
+    text-decoration: underline !important;
+}
+.text-primary-custom:hover {
+    color: #46719f;
 }
 .text-secondary-custom {
     font-size: 48px;
@@ -2495,7 +2501,7 @@ overflow: hidden !important;
 }
 .sub-footer p {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     color: #666;
 }
 .sub-footer p a:hover {
