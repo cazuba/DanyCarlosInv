@@ -272,8 +272,8 @@
     var sliderMain = function () {
         $('.flexslider').flexslider({
             animation: "fade"
-            , slideshowSpeed: 5000
-            , slideshow: false
+            , slideshowSpeed: 3000
+            , slideshow: true
             , directionNav: true
             , start: function () {
                 setTimeout(function () {

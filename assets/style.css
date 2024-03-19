@@ -176,6 +176,9 @@ a[href^="tel"] {
 .bg-fixed {
     background-attachment: fixed;
 }
+.bg-white-2 {
+    background-color: rgba(255, 255, 255, 0.7);
+}
 .text-primary-custom p {
     color: #2a4562;
 }
@@ -822,6 +825,9 @@ color: #46719f;
 }
 
 /* ======= Page Header style ======= */
+#banner {
+    background-position: center;
+}
 .banner-header {
     padding: 200px 0;
     clear: both;
@@ -866,9 +872,17 @@ color: #46719f;
 .mary-hero .flexslider .slides li {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center;
+    background-position: center center;
     position: relative;
     min-height: 100vh;
+}
+@media screen and (max-width: 991px) {
+    .mary-hero .flexslider .slides li {
+        background-position: 73% top;
+    }
+    .mary-hero .flexslider .slides li:nth-child(3) {
+        background-position: 60% top;
+    }
 }
 .mary-hero .flexslider .flex-control-nav {
     bottom: 20px;
@@ -1013,6 +1027,9 @@ color: #46719f;
     margin: 0;
     padding: 100px 0;
     width: 100%;
+}
+.rsvp {
+    background-position: center;
 }
 .rsvp h2 {
     color: #1b1b1b;
@@ -1404,6 +1421,9 @@ color: #46719f;
 
 
 /* =======  Story video style  ======= */
+.story-video {
+    background-position: center;
+}
 .story-video .video-wrapper {
 overflow: hidden !important;
 }
