@@ -1827,7 +1827,18 @@ overflow: hidden !important;
     right: 15px;
     width: 40px;
 }
-
+#logo-boda img {
+    height: auto;
+    left: 35%;
+    position: relative;
+    width: 30%;
+}
+@media screen and (max-width: 480px) {
+    #logo-boda img {
+        left: 0%;
+        width: 100%;
+    }   
+}
 /* ======= Blog style ======= */
 .marybrian-blog .img {
   position: relative;
