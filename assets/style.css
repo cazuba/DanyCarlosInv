@@ -1811,7 +1811,22 @@ overflow: hidden !important;
 .gallery-box:hover .gallery-img>img {
     transform: scale(1.05);
 }
-
+.visit-gallery {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #2a4562;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.visit-gallery span {
+    font-size: 14px;
+}
+.gallery-icon {
+    top: 15px;
+    height: 40px;
+    position: absolute;
+    right: 15px;
+    width: 40px;
+}
 
 /* ======= Blog style ======= */
 .marybrian-blog .img {
