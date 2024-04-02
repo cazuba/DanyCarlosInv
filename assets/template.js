@@ -291,28 +291,28 @@
     };
     
     // Gallery 
-    $(window).on("load", function () {
-    var e = $(".gallery-filter")
-        , a = $("#gallery-filter");
-    e.isotope({
-        filter: "*"
-        , layoutMode: "masonry"
-        , animationOptions: {
-            duration: 750
-            , easing: "linear"
-        }
-    }), a.find("a").on("click", function () {
-        var o = $(this).attr("data-filter");
-        return a.find("a").removeClass("active"), $(this).addClass("active"), e.isotope({
-            filter: o
-            , animationOptions: {
-                animationDuration: 750
-                , easing: "linear"
-                , queue: !1
-            }
-        }), !1
-    })
-});
+    // $(window).on("load", function () {
+    //     var e = $(".gallery-filter")
+    //         , a = $("#gallery-filter");
+    //     e.isotope({
+    //         filter: "*"
+    //         , layoutMode: "masonry"
+    //         , animationOptions: {
+    //             duration: 750
+    //             , easing: "linear"
+    //         }
+    //     }), a.find("a").on("click", function () {
+    //         var o = $(this).attr("data-filter");
+    //         return a.find("a").removeClass("active"), $(this).addClass("active"), e.isotope({
+    //             filter: o
+    //             , animationOptions: {
+    //                 animationDuration: 750
+    //                 , easing: "linear"
+    //                 , queue: !1
+    //             }
+    //         }), !1
+    //     })
+    // });
     
     // Magnific Popup
     $(".img-zoom").magnificPopup({
@@ -365,35 +365,35 @@
     })
     
     // RSVP FORM 
-    var form = $('.contact__form'),
-        message = $('.contact__msg'),
-        form_data;
-    function done_func(response) {
-        message.fadeIn().removeClass('alert-danger').addClass('alert-success');
-        message.text(response);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 2000);
-        form.find('input:not([type="submit"]), textarea').val('');
-    }
-    function fail_func(data) {
-        message.fadeIn().removeClass('alert-success').addClass('alert-success');
-        message.text(data.responseText);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 2000);
-    }
-    form.submit(function (e) {
-        e.preventDefault();
-        form_data = $(this).serialize();
-        $.ajax({
-            type: 'POST',
-            url: form.attr('action'),
-            data: form_data
-        })
-        .done(done_func)
-        .fail(fail_func);
-    });
+    // var form = $('.contact__form'),
+    //     message = $('.contact__msg'),
+    //     form_data;
+    // function done_func(response) {
+    //     message.fadeIn().removeClass('alert-danger').addClass('alert-success');
+    //     message.text(response);
+    //     setTimeout(function () {
+    //         message.fadeOut();
+    //     }, 2000);
+    //     form.find('input:not([type="submit"]), textarea').val('');
+    // }
+    // function fail_func(data) {
+    //     message.fadeIn().removeClass('alert-success').addClass('alert-success');
+    //     message.text(data.responseText);
+    //     setTimeout(function () {
+    //         message.fadeOut();
+    //     }, 2000);
+    // }
+    // form.submit(function (e) {
+    //     e.preventDefault();
+    //     form_data = $(this).serialize();
+    //     $.ajax({
+    //         type: 'POST',
+    //         url: form.attr('action'),
+    //         data: form_data
+    //     })
+    //     .done(done_func)
+    //     .fail(fail_func);
+    // });
     
     
 }());
