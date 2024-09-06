@@ -196,6 +196,11 @@ a[href^="tel"] {
     .bg-fixed {
     background-attachment: initial;}
 }
+.px-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 .p-40 {
     padding: 40px;
 }
@@ -1079,6 +1084,11 @@ color: #46719f;
     margin-bottom: 30px;
         overflow: hidden;
 }
+@media screen and (max-width: 991px) {
+    .welcome.section-padding {
+        padding-top: 0;
+    }
+}
 
 
 /* =======  Bride & Groom style  ======= */
@@ -1698,6 +1708,83 @@ overflow: hidden !important;
 }
 .when-where .content .info .tags {
   color: #46719f;
+}
+.when-where {
+    position: relative;
+}
+.when-where .frame,
+.when-where .frame-inverse {
+    position: absolute;
+}
+.when-where .frame img,
+.when-where .frame-inverse img {
+    width: 600px;
+}
+.when-where .frame {
+    top: 0;
+    left: 0;
+}
+.when-where .frame img {
+    transform: translateX(-100px) translateY(-80px);
+}
+.when-where .frame-inverse {
+    bottom: 0;
+    overflow: hidden;
+    right: 0;
+    transform: rotate(180deg);
+}
+.when-where .frame-inverse img {
+    transform: translateX(-100px) translateY(-80px);
+}
+
+@media screen and (max-width: 768px) {
+    .when-where .frame img,
+    .when-where .frame-inverse img {
+        width: 80vw;
+    }
+    .when-where .frame-inverse img {
+        transform: translateX(-50px) translateY(-80px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .when-where .frame img,
+    .when-where .frame-inverse img {
+        width: 100vw;
+    }
+}
+
+.when-where .date {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.when-where .date span {
+    color: #46719f;
+    font-size: 50px;
+    font-family: 'Didact Gothic', sans-serif;
+    padding: 20px 30px;
+}
+.when-where .date span:not(:last-child) {
+    border-right: 2px solid black;
+}
+.when-where .time {
+    color: #46719f;
+    font-size: 30px;
+    font-family: 'Didact Gothic', sans-serif;
+    margin-bottom: 40px;
+}
+.button {
+    background: #46719f;
+    border-radius: 50px;
+    border: 1px solid #46719f;
+    color: white;
+    display: inline-block;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 12px 30px;
 }
 @media screen and (max-width: 991px) {
     .when-where .content {
