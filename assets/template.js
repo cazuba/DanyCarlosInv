@@ -51,8 +51,12 @@
     
     // Preloader 
     $(window).load(function() {
-    $('.preloader').fadeOut("slow");
+        $('.preloader').fadeOut("slow");
     });
+
+    setTimeout(() => {
+        $('.preloader').fadeOut("slow");
+    }, 5000);
     
     var wind = $(window);
     
